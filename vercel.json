@@ -1,5 +1,5 @@
 {
-    "version": 3,
+    "version": 2,
     "env": {
         "BASE_URI": "https://quran-data.vercel.app"
     },

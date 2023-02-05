@@ -1,30 +1,19 @@
 <p align="center">
 <img alt="node-current" src="https://img.shields.io/node/v/jest">
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/rzkytmgr/Quran-API">
-    <a href="https://github.com/rzkytmgr/Quran-API/blob/master/LICENSE">
-    	<img alt="GitHub" src="https://img.shields.io/github/license/rzkytmgr/Quran-API">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/zavierferodova/Quran-Api">
+    <a href="https://github.com/zavierferodova/Quran-Api/blob/master/LICENSE">
+    	<img alt="GitHub" src="https://img.shields.io/github/license/zavierferodova/Quran-Api">
     </a>
     <br>
-    <a href="https://github.com/rzkytmgr/Quran-API/issues">
-    	<img alt="GitHub issues" src="https://img.shields.io/github/issues/rzkytmgr/Quran-API">
-	</a>
-    <a href="https://github.com/rzkytmgr/Quran-API/pulls">
-    	<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/rzkytmgr/Quran-API">
-	</a>
     <br>
-    <a href="https://quran-endpoint.vercel.app/">
-    <img alt="Website" src="https://img.shields.io/website?label=vercel&down_message=offline&up_message=online&url=https%3A%2F%2Fquran-endpoint.vercel.app%2F">
-    </a>
-    <a href="https://quran-endpoint.herokuapp.com/">
-    <img alt="Website" src="https://img.shields.io/website?label=heroku&down_message=offline&up_message=online&url=https%3A%2F%2Fquran-endpoint.herokuapp.com%2F">
+    <a href="https://quran-data.vercel.app/">
+      <img alt="Website" src="https://img.shields.io/website?label=vercel&down_message=offline&up_message=online&url=https%3A%2F%2Fquran-data.vercel.app%2F">
     </a>
 </p>
 
 
 
 <hr />
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N02S5BX) <a href="https://trakteer.id/ruzky" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-5.png" height="30" style="border: 0px; height: 30px;" alt="Trakteer Saya"></a>
 
 This project is made for developers who want to develop Islamic applications. besides that this project also aims to be a charity for developers who develop applications with this API, especially me and the developers from the data sources that I get.
 
@@ -48,7 +37,7 @@ This API was created using the [Express Web Application Framework](https://expre
 **File Structure :**
 
 ```
-Quran-API
+Quran-Api
 ├── __test__/
 ├── data/
 │	├── imam.json
@@ -79,7 +68,7 @@ There are several different ways to do the installation, you can use whichever y
 
   ```bash
   # clone the repository
-  > git clone https://github.com/rzkytmgr/Quran-API.git quran-api
+  > git clone https://github.com/zavierferodova/Quran-Api.git quran-api
   
   # change directory
   > cd quran-api
@@ -90,22 +79,13 @@ There are several different ways to do the installation, you can use whichever y
   # now, you can start it
   > npm start
   ```
-
   
 
-- **Heroku Deploy**
-
-  you can do it with just one click. But you must have a [Heroku](http://heroku.com/) account.
-
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rzkytmgr/Quran-API)
-  
-  
-  
 - **Vercel Deploy**
 
   click the deploy button below. Register your own [vercel](https://vercel.com) account
 
-  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frzkytmgr%2FQuran-API)
+  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fzavierferodova%2FQuran-Api)
 
 
 
@@ -119,13 +99,13 @@ There are several different ways to do the installation, you can use whichever y
 
 ---
 
-**Base** : https://quran-endpoint.vercel.app/
+**Base** : https://quran-data.vercel.app/
 
-**Alternative** : https://quran-endpoint.herokuapp.com/
+**Alternative** : -
 
 ---
 
-Some of these API endpoints that you can access, start the application on your local computer or for a demo, you can go to the following link [Qur'an Endpoint](http://quran-endpoint.herokuapp.com/)
+Some of these API endpoints that you can access, start the application on your local computer or for a demo, you can go to the following link [Qur'an Endpoint](http://quran-data.vercel.app/)
 
 - **/imam/:id**
 
@@ -137,18 +117,18 @@ Some of these API endpoints that you can access, start the application on your l
 
   *query* :
 
-  -
+  `-`
 
   *example* :
 
   ```bash
   # display all imam
   > curl -v -H "Content-Type: application/json" \
-  > http://quran-endpoint.herokuapp.com/imam
+  > http://quran-data.vercel.app/imam
   
   # display spesific imam
   > curl -v -H "Content-Type: application/json" \
-  > http://quran-endpoint.herokuapp.com/imam/2
+  > http://quran-data.vercel.app/imam/2
   ```
 
 - **/quran/:surah/:ayah?imamId=**
@@ -170,15 +150,15 @@ Some of these API endpoints that you can access, start the application on your l
   ```bash
   # show all qur'an surah (without ayah)
   > curl -v -H "Content-Type: application/json" \
-  > http://quran-endpoint.herokuapp.com/quran
+  > http://quran-data.vercel.app/quran
   
   # show spesific qur'an surah (with ayah)
   > curl -v -H "Content-Type: application/json" \
-  > http://quran-endpoint.herokuapp.com/quran/12
+  > http://quran-data.vercel.app/quran/12
   
   # show spesific ayah in a surah
   > curl -v -H "Content-Type: application/json" \
-  > http://quran-endpoint.herokuapp.com/quran/12/4
+  > http://quran-data.vercel.app/quran/12/4
   
   # note :
   #	you can add the ?imamId= query wherever you want,
@@ -239,6 +219,4 @@ Some quran fonts for you projects
 
 
 
-Thank you,
-
-[**@rzkytmgr**](https://github.com/rzkytmgr)
+Thank you
